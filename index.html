@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head> 
+<head>
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Nam",
-  "url": "https://namtran-svs.github.io/bao-nam-web/"
-}
-</script>
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Nam",
+    "url":"https://namtran-svs.github.io/bao-nam-web/"
+  }
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nam — Personal Archive</title>
- <meta name="description" content="Góc nhỏ trên Internet của Nam — nơi tôi lưu lại những thứ mình làm, thích và đang khám phá.">
+  <meta name="description" content="Góc nhỏ trên Internet của Nam — nơi tôi lưu lại những thứ mình làm, thích và đang khám phá.">
   <meta name="robots" content="index, follow">
   <meta property="og:title" content="Nam — Personal Archive">
   <meta property="og:description" content="Góc nhỏ trên Internet của Nam — nơi tôi lưu lại những thứ mình làm, thích và đang khám phá.">
@@ -23,87 +23,171 @@
 <body>
   <div class="noise"></div>
   <header>
-    <a class="logo" href="#top">BN<span>.</span></a>
-    <nav>
+    <a class="logo" href="#top" aria-label="Về đầu trang">NAM<span>.</span></a>
+    <nav aria-label="Điều hướng chính">
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#archive">Archive</a>
+      <a href="#now">Now</a>
     </nav>
-    <button id="themeBtn" aria-label="Đổi giao diện">◐</button>
+    <button id="themeBtn" aria-label="Đổi giao diện" title="Đổi giao diện">◐</button>
   </header>
 
   <main id="top">
-    <section class="hero">
-      <p class="eyebrow">PERSONAL ARCHIVE / 2026</p>
-      <h1>Xin chào, tôi là<br><span>Bảo Nam.</span></h1>
-      <p class="intro">Một góc nhỏ để lưu lại những thứ tôi đã làm, đang làm, và những thứ chưa biết bao giờ mới làm xong.</p>
-      <div class="actions">
-        <a class="btn primary" href="#projects">Xem những thứ tôi làm ↓</a>
-        <button class="btn ghost" id="secretBtn">SECRET FILE</button>
+    <section class="hero section-pad reveal-on-load">
+      <div class="hero-meta">
+        <p class="eyebrow">PERSONAL ARCHIVE / 2026</p>
+        <span class="hero-index">001</span>
       </div>
-      <div class="status"><i></i> ONLINE — somewhere in Vietnam</div>
+      <h1>Still<br><span>becoming.</span></h1>
+      <div class="hero-bottom">
+        <p class="intro">Tôi đang học, đang thử, đang làm rất nhiều thứ chưa chắc sẽ hoàn thành. Website này là nơi tôi lưu lại quá trình đó.</p>
+        <div class="actions">
+          <a class="btn primary" href="#about">ENTER THE ARCHIVE ↓</a>
+          <button class="btn ghost" id="secretBtn">SECRET FILE</button>
+        </div>
+      </div>
+      <div class="status"><i></i> ONLINE — somewhere in Vietnam <span>/</span> archive is alive</div>
     </section>
 
-    <section id="about" class="section">
+    <section class="section reveal" id="currently">
+      <div class="section-head">
+        <div class="section-label">00 / CURRENTLY</div>
+        <p class="section-note">Things happening right now.</p>
+      </div>
+      <div class="currently-grid">
+        <article class="currently-item"><span>01</span><h3>STUDYING</h3><p>High school, grade 10. Vẫn đang vật lộn với mấy môn chưa chịu hiểu nhau.</p></article>
+        <article class="currently-item"><span>02</span><h3>BUILDING</h3><p>Personal Archive V3 — phiên bản này phải có nhiều thứ để khám phá hơn.</p></article>
+        <article class="currently-item"><span>03</span><h3>LEARNING</h3><p>Code, English, physics, và bất kỳ thứ gì đủ khiến tôi tò mò.</p></article>
+        <article class="currently-item"><span>04</span><h3>TRYING</h3><p>Bớt trì hoãn. Kết quả hiện tại: đang thử tiếp.</p></article>
+      </div>
+    </section>
+
+    <section id="about" class="section reveal">
       <div class="section-label">01 / ABOUT</div>
       <div class="about-grid">
         <div>
           <h2>Không cần quá<br><em>nghiêm túc.</em></h2>
+          <p class="big-caption">Nhưng đủ thật để đáng nhớ.</p>
         </div>
         <div class="copy">
+          <p>Tôi 16 tuổi, đang ở một giai đoạn khá kỳ lạ: đã đủ lớn để bắt đầu tự chọn hướng đi, nhưng vẫn còn đang thử rất nhiều con đường.</p>
           <p>Tôi thích mày mò, học những thứ linh tinh, làm web, viết lách và đôi lúc tự nhiên nảy ra những ý tưởng khá là... đáng ngờ.</p>
+          <p>Tôi nghĩ khá nhiều. Có khi nghĩ quá nhiều. Tôi thích những câu chuyện có lore, những nhân vật phức tạp, những chi tiết nhỏ mà người khác dễ bỏ qua.</p>
           <p>Website này không phải CV. Nó giống một cái ngăn kéo trên Internet hơn — mở ra thì không biết sẽ thấy gì.</p>
         </div>
       </div>
-    </section>
-
-    <section id="projects" class="section">
-      <div class="section-label">02 / PROJECTS</div>
-      <div class="cards">
-        <article class="card">
-          <span>01</span><h3>Personal Web</h3>
-          <p>Góc riêng trên Internet, nơi t thử nghiệm UI, animation và mấy trò linh tinh.</p>
-          <b>WEB / DESIGN</b>
-        </article>
-        <article class="card">
-          <span>02</span><h3>Story Archive</h3>
-          <p>Những nhân vật, thế giới và câu chuyện xuất hiện vào những lúc tôi muốn viết.</p>
-          <b>WRITING / FICTION</b>
-        </article>
-        <article class="card">
-          <span>03</span><h3>Experiments</h3>
-          <p>Những thử nghiệm nhỏ: hiệu ứng, JavaScript, ý tưởng lạ và những thứ chưa có tên.</p>
-          <b>CODE / LAB</b>
-        </article>
+      <div class="facts-grid">
+        <div class="fact"><span>AGE</span><strong>16</strong></div>
+        <div class="fact"><span>ERA</span><strong>HIGH SCHOOL</strong></div>
+        <div class="fact"><span>LIKES</span><strong>STORIES / CODE / IDEAS</strong></div>
+        <div class="fact"><span>WEAKNESS</span><strong>PROCRASTINATION</strong></div>
+        <div class="fact"><span>SUPERPOWER</span><strong>CURIOSITY</strong></div>
       </div>
     </section>
 
-    <section id="archive" class="section archive">
-      <div class="section-label">03 / ARCHIVE</div>
-      <div class="terminal">
-        <div class="terminal-top"><span></span><span></span><span></span><label>archive.log</label></div>
-        <div class="terminal-body">
-          <p><small>01</small> summer_2026 <strong>→</strong> bắt đầu nghịch web</p>
-          <p><small>02</small> project_001 <strong>→</strong> personal archive</p>
-          <p><small>03</small> status <strong>→</strong> still figuring things out...</p>
-          <p class="cursor">_</p>
+    <section id="activity" class="section reveal">
+      <div class="section-head">
+        <div class="section-label">01.5 / ACTIVITY</div>
+        <p class="section-note">A small record of recent movement.</p>
+      </div>
+      <div class="activity-list">
+        <button class="activity-row" data-modal-title="Personal Archive V3" data-modal-kicker="13.09.26 / BUILD" data-modal-text="Bắt đầu phiên bản V3: nhiều nội dung hơn, nhiều lớp khám phá hơn, và bớt cảm giác như một landing page trống."><span>09.13.26</span><strong>Rebuilding Personal Archive V3</strong><em>↗</em></button>
+        <button class="activity-row" data-modal-title="Learning web development" data-modal-kicker="09.06.26 / LEARN" data-modal-text="Bắt đầu hiểu HTML, CSS và JavaScript từ những thứ rất cơ bản. Từ đó website này mới thực sự bắt đầu có hình hài."><span>09.06.26</span><strong>Started learning web development</strong><em>↗</em></button>
+        <button class="activity-row" data-modal-title="A small training goal" data-modal-kicker="08.31.26 / PERSONAL" data-modal-text="Mục tiêu mùa hè là 10 pull-ups. Mốc hiện tại: 7. Chưa tới đích, nhưng cũng chưa bỏ cuộc."><span>08.31.26</span><strong>Goal: 10 pull-ups</strong><em>↗</em></button>
+        <button class="activity-row" data-modal-title="Physics / Grade 10" data-modal-kicker="08.30.26 / STUDY" data-modal-text="Một ngày bình thường với dao động, năng lượng, động lượng và vô số câu hỏi kiểu tại sao nó lại ra đáp án này."><span>08.30.26</span><strong>Physics / Grade 10</strong><em>↗</em></button>
+      </div>
+    </section>
+
+    <section id="projects" class="section reveal">
+      <div class="section-head">
+        <div class="section-label">02 / PROJECTS</div>
+        <p class="section-note">Things I have built, or kept building.</p>
+      </div>
+      <div class="cards project-grid">
+        <button class="card project-card" data-modal-title="Personal Archive V3" data-modal-kicker="WEB / CURRENT" data-modal-text="Một personal website được xây như một archive đang sống: có about, activity, timeline, unfinished ideas và secret system.">
+          <span>01</span><h3>Personal Archive</h3><p>Một góc riêng trên Internet, nơi tôi thử UI, animation, JavaScript và đủ loại ý tưởng.</p><b>WEB / DESIGN <i>↗</i></b>
+        </button>
+        <button class="card project-card" data-modal-title="Story Archive" data-modal-kicker="WRITING / FICTION" data-modal-text="Những nhân vật, thế giới và câu chuyện xuất hiện vào những lúc tôi muốn viết. Một vài thứ vẫn đang dang dở.">
+          <span>02</span><h3>Story Archive</h3><p>Những thế giới hư cấu, nhân vật và plot chưa chịu nằm yên trong đầu.</p><b>WRITING / FICTION <i>↗</i></b>
+        </button>
+        <button class="card project-card" data-modal-title="Experiments" data-modal-kicker="CODE / LAB" data-modal-text="Các thử nghiệm nhỏ: hiệu ứng, JavaScript, giao diện, mini tools và những ý tưởng chưa có tên.">
+          <span>03</span><h3>Experiments</h3><p>Những thứ bắt đầu bằng câu: “để thử xem có làm được không”.</p><b>CODE / LAB <i>↗</i></b>
+        </button>
+      </div>
+    </section>
+
+    <section id="archive" class="section archive reveal">
+      <div class="section-head">
+        <div class="section-label">03 / ARCHIVE</div>
+        <p class="section-note">A timeline, not a résumé.</p>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item"><span class="timeline-date">2026</span><div><h3>Started high school</h3><p>Một chương mới, nhiều thứ mới, và cũng nhiều thứ phải tự học hơn.</p></div></article>
+        <article class="timeline-item"><span class="timeline-date">2026</span><div><h3>Started learning to code</h3><p>Từ “HTML với CSS là cái gì vậy” đến việc tự tay xây một website.</p></div></article>
+        <article class="timeline-item"><span class="timeline-date">2026</span><div><h3>Built Personal Web V1</h3><p>Phiên bản đầu tiên còn đơn giản, nhưng nó đã tồn tại.</p></div></article>
+        <article class="timeline-item"><span class="timeline-date">2026</span><div><h3>Built V2</h3><p>Dark aesthetic, terminal, Secret File và cảm giác “có gì đó đang giấu ở đây”.</p></div></article>
+        <article class="timeline-item current"><span class="timeline-date">NOW</span><div><h3>Personal Archive V3</h3><p>Không chỉ là website nữa. Đây là nơi lưu lại cả quá trình.</p></div></article>
+      </div>
+    </section>
+
+    <section id="unfinished" class="section reveal">
+      <div class="section-head">
+        <div class="section-label">04 / UNFINISHED</div>
+        <p class="section-note">Ideas without an ending.</p>
+      </div>
+      <div class="unfinished-list">
+        <article class="unfinished-item"><div><span>01</span><h3>Fantasy Story</h3><p>Một câu chuyện về những con người bị kéo vào một hành trình không ai chủ động chọn.</p></div><strong>60%</strong><div class="progress"><i style="width:60%"></i></div></article>
+        <article class="unfinished-item"><div><span>02</span><h3>Personal Website V3</h3><p>Nơi m đang đứng lúc này.</p></div><strong>80%</strong><div class="progress"><i style="width:80%"></i></div></article>
+        <article class="unfinished-item"><div><span>03</span><h3>Unknown Project</h3><p>Chưa có tên. Chưa có deadline. Có vẻ vẫn sống.</p></div><strong>30%</strong><div class="progress"><i style="width:30%"></i></div></article>
+      </div>
+      <p class="unfinished-note">Some things are more interesting unfinished.</p>
+    </section>
+
+    <section id="now" class="section reveal">
+      <div class="section-head">
+        <div class="section-label">05 / NOW</div>
+        <p class="section-note">Updated when something actually changes.</p>
+      </div>
+      <div class="now-grid">
+        <div>
+          <h2>What I'm<br><em>doing now.</em></h2>
+        </div>
+        <div class="now-copy">
+          <p>→ học cấp 3</p>
+          <p>→ học cách code thay vì chỉ nghĩ về code</p>
+          <p>→ làm V3 tử tế</p>
+          <p>→ thử hoàn thành những thứ đã bắt đầu</p>
+          <p>→ gom nhặt ý tưởng để sau này còn có cái mà làm</p>
+          <div class="updated">LAST UPDATED / 13.09.2026</div>
         </div>
       </div>
+    </section>
+
+    <section class="section secret-section reveal">
+      <div class="secret-line"></div>
+      <div class="secret-content">
+        <p class="eyebrow">CLASSIFIED / 006</p>
+        <h2>There's something<br><em>you shouldn't click.</em></h2>
+        <button class="btn ghost secret-large" id="secretBtnBottom">OPEN SECRET FILE</button>
+      </div>
+      <div class="secret-line"></div>
     </section>
   </main>
 
   <footer>
     <span>© 2026 B.Nam</span>
     <span>MADE WITH TOO MUCH CURIOSITY.</span>
+    <span>STATUS: STILL BECOMING</span>
   </footer>
 
-  <div class="modal" id="modal">
-    <div class="modal-box">
-      <button class="close" id="closeModal">×</button>
-      <p class="eyebrow">CLASSIFIED</p>
-      <h2>ACCESS GRANTED.</h2>
-      <p>Không có gì đâu :)))<br>Nhưng "you" đã tìm thấy một thứ không phải ai cũng tìm thấy.</p>
-      <div class="fake-code">USER: VISITOR<br>LEVEL: CURIOUS<br>STATUS: <strong>WELCOME</strong></div>
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="close" id="closeModal" aria-label="Đóng">×</button>
+      <p class="eyebrow" id="modalKicker">CLASSIFIED</p>
+      <h2 id="modalTitle">ACCESS GRANTED.</h2>
+      <p id="modalText">Không có gì đâu :)))</p>
+      <div class="fake-code" id="modalCode">USER: VISITOR<br>LEVEL: CURIOUS<br>STATUS: <strong>WELCOME</strong></div>
     </div>
   </div>
 
